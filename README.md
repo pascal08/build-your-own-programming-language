@@ -123,10 +123,12 @@ Try to think of the simplest case you can test. Hint: this is usually the least 
 
 ### Step 5 - Run the test
 
-Run the tests. You should see an output like this telling you that it misses the `Lexer` class.
+Run the tests by executing the `tests.sh` script from the command line. You should see an output like this telling you that it misses the `Lexer` class.
+
+> If you have not run `./tests.sh` before it will start by building the Docker image.
 
 ```
-➜  vendor/bin/phpunit tests/                     
+➜  ./tests.sh                    
 PHPUnit 9.5.26 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 8.1.12
@@ -154,7 +156,7 @@ Create a Lexer class containing a `tokenize` method. This method must have a sin
 Run the tests again. You should now get the following output:
 
 ```
-➜  vendor/bin/phpunit tests/
+➜  ./tests.sh 
 PHPUnit 9.5.26 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 8.1.12
@@ -181,7 +183,7 @@ Tests: 1, Assertions: 0, Errors: 1.
 Implement the simple test case you have defined in step 4. Run the tests again and make sure this time it passes.
 
 ```
-➜  vendor/bin/phpunit tests/
+➜  ./tests.sh 
 PHPUnit 9.5.26 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 8.1.12
