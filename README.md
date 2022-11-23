@@ -75,6 +75,7 @@ It usually does not perform any validation on the tokens, except for very basic 
 
 Here is an example of some possible inputs you could feed into an s-expression lexer, and the resulting outputs:
 
+```
 +---------------+----------------------------------------------------+
 | S-expression  | Tokens                                             |
 +---------------+----------------------------------------------------+
@@ -87,6 +88,7 @@ Here is an example of some possible inputs you could feed into an s-expression l
 | (+ 1 2)       | ["(", "+", "1", "2", ")"]                          |
 | ((a 1) (b 2)) | ["(", "(", "a", "1", ")", "(", "b", "2", ")", ")"] |
 +---------------+----------------------------------------------------+
+```
 
 The lexer will be a class with a single tokenize method.
 
