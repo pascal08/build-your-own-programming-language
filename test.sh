@@ -8,4 +8,4 @@ then
   ./build.sh
 fi
 
-docker run --rm ${IMAGE} vendor/bin/phpunit
+docker run --rm ${IMAGE} -v $(pwd):/app vendor/bin/phpunit
